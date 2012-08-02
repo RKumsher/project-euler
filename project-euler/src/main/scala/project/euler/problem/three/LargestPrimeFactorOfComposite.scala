@@ -1,7 +1,5 @@
 package project.euler.problem.three
 
-import scala.math
-
 /**
  * Find the largest prime factor of a composite number.
  *
@@ -29,14 +27,6 @@ object LargestPrimeFactorOfComposite extends App {
       i += 1
     }
     //(1L to (number / 2 + 1)).filter(isPrime(_))
-  }
-
-  def isPrime(number: Long) = {
-    if (number < 2)
-      false
-    if (number == 2 || number == 3)
-      true
-    !(2L to math.sqrt(number).round + 1).exists(number % _ == 0)
   }
 
 }

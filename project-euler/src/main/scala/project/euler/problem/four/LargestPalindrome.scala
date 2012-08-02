@@ -10,7 +10,7 @@ import scala.annotation.tailrec
  */
 // (913,993) = 906,609
 object LargestPalindrome extends App {
-  var largestProduct = 999 * 999
+  val largestProduct = 999 * 999
   println(getLargestPalindromeMadeFromProduct(largestProduct))
 
   @tailrec
